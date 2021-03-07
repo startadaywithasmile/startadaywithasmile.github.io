@@ -9,20 +9,21 @@ title: 标题先取这个吧
 
 ## iOS 6.1.3 ipa 分享 ##
 ----
-1.
-
-
-
+> Deemo 1.0.0.ipa
+链接：[Jekyll-Now中所有风格元素的演示](https://pan.baidu.com/s/1jEUYeGsyHUKd_Xj1i2TnRg)
+提取码：2021 
+> 
 
 ## 关于jekyll-now  ##
 ----
 
 刚刚花了点时间看了一下Jekyll-Now的语法：
 
-[Jekyll-Now中所有风格元素的演示](http://www.jekyllnow.com/Markdown-Style-Guide/)
+>[Jekyll-Now中所有风格元素的演示](http://www.jekyllnow.com/Markdown-Style-Guide/)
 
-[对应的标记](https://raw.githubusercontent.com/barryclark/www.jekyllnow.com/gh-pages/_posts/2014-6-19-Markdown-Style-Guide.md)
+>[对应的标记](https://raw.githubusercontent.com/barryclark/www.jekyllnow.com/gh-pages/_posts/2014-6-19-Markdown-Style-Guide.md)
+
 
 `就这样吧`
  
-`明天见`
+_明天见_
