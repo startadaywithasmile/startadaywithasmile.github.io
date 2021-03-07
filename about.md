@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+"Though much is taken, much abides; and though
+We are not now that strength which in old days
+Moved earth and heaven, that which we are, we are;
+One equal temper of heroic hearts,
+Made weak by time and fate, but strong in will
+To strive, to seek, to find, and not to yield."
 
-### More Information
+— Alfred Tennyson (Idylls of the King and a Selection of Poems)
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+
