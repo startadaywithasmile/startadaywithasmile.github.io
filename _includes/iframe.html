@@ -15,7 +15,7 @@
     {% assign src = src | replace: "watch?v=", "embed/" | replace: "youtu.be", "www.youtube.com/embed"  %}
   {% when 'v.qq.com' %}
     {% assign ratio = '60%' %}
-    {% assign src = src | replace: ".html", "" | replace: "x/cover/", "txp/iframe/player.html?vid="  %}
+    {% assign src = src | replace: ".html", "" | replace: "x/page/", "txp/iframe/player.html?vid="  %}
   {% when 'v.youku.com' %}
     {% assign src = src | replace: ".html", "" | replace: "v.youku.com/v_show/id_", "player.youku.com/embed/"  %}
 {% endcase %}
