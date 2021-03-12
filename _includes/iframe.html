@@ -7,7 +7,7 @@
 {% endif %}
 {% case type %}
   {% when "pdf" %}
-    {% assign src = '/ipa picture/js/viewer-js/#' | append: src %}
+    {% assign src = '/assets/js/viewer-js/#' | append: src %}
   {% when 'www.bilibili.com' or 'player.bilibili.com' %}
     {% assign ratio = '70%' %}
     {% assign src = src | replace: "www.bilibili.com/video/", "player.bilibili.com/player.html?bvid=" %}
