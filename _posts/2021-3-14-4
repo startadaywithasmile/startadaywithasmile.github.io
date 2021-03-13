@@ -1,0 +1,259 @@
+---
+layout: post
+title: /jekyll-now/ link
+music-id: 504264241 # 网易云音乐单曲嵌入
+music-idfull: 6639500509  # 网易云音乐歌单嵌入
+---
+#jekyll-now 学习笔记
+
+#本篇list，在_includes中添加插件, 从而在Blogger插入link
+
+#感谢 [duter2016](https://github.com/Duter2016/Duter2016.github.io/blob/master/_posts/2019-09-16-%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6.md) 以及 [wechaty](https://github.com/wechaty/wechaty.js.org/blob/master/jekyll/_posts/2020-08-24-add-video-to-wechaty-blog.md)
+
+## 网易云音乐 ##
+----
+
+在_includes目录下创建cloud-music.html，具体代码如下：
+
+```javascript
+<!-- cloud music -->
+<!-- 单曲嵌入， auto=1 可以控制自动播放与否，当值为 1 即打开网页就自动播放，值为 0 时需要访客手动点击播放 -->
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86
+        src="//music.163.com/outchain/player?type=2&id={{ page.music-id }}&auto=0&height=66">
+</iframe>
+```
+
+在_includes目录下创建cloud-music-full.html，具体代码如下：
+
+```javascript
+<!-- cloud music full -->
+<!-- 歌单嵌入, auto=1 可以控制自动播放与否，当值为 1 即打开网页就自动播放，值为 0 时需要访客手动点击播放 -->
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450
+        src="//music.163.com/outchain/player?type=0&id={{ page.music-idfull }}&auto=0&height=430">
+</iframe>
+```
+
+在需要添加音乐的博文的md文件开头的配置项添加music-id: xxxxxx 或music-idfull: xxxxxx ，即添加如下代码：
+
+```javascript
+music-id: xxxxxx        # 网易云音乐单曲嵌入
+music-idfull: xxxxxxx        # 网易云音乐歌单嵌入
+```
+
+#### 网易云音乐单曲插件
+
+在需要嵌入音乐单曲的地方添加以下代码：
+
+{% raw %}
+
+```javascript
+{% include cloud-music.html %}
+```
+
+{% endraw %}
+
+不要忘记在需要添加音乐单曲的博文的md文件开头的配置项添加music-id: xxxxxx：
+
+```javascript
+---
+layout: post
+title: /jekyll-now/ link
+music-id: 504264241 # 网易云音乐单曲嵌入
+music-idfull: 6639500509  # 网易云音乐歌单嵌入
+---
+```
+
+{% include cloud-music.html %}
+
+#### 网易云音乐歌单插件
+
+在需要嵌入音乐歌单的地方添加以下代码：
+
+{% raw %}
+
+```javascript
+{% include cloud-music-full.html %}
+```
+
+{% endraw %}
+
+{% include cloud-music-full.html %}
+
+不要忘记在需要添加音乐歌单的博文的md文件开头的配置项添加music-idfull: xxxxxx：
+
+```javascript
+---
+layout: post
+title: /jekyll-now/ link
+music-id: 504264241 # 网易云音乐单曲嵌入
+music-idfull: 6639500509  # 网易云音乐歌单嵌入
+---
+```
+
+## pdf 视频源 ##
+----
+
+在_includes目录下创建iframe.html，具体代码如下：
+
+```javascript
+{% assign src = include.src %}
+{% assign ratio = '56.25%' %}
+{% if src contains '.pdf' %}
+  {% assign type = 'pdf' %}
+{% else %}
+  {% assign type = src | split: '//' | last | split: '/' | first %}
+{% endif %}
+{% case type %}
+  {% when "pdf" %}
+    {% assign src = '/assets/js/viewer-js/#' | append: src %}
+  {% when 'www.bilibili.com' or 'player.bilibili.com' %}
+    {% assign ratio = '70%' %}
+    {% assign src = src | replace: "www.bilibili.com/video/", "player.bilibili.com/player.html?bvid=" %}
+  {% when 'youtu.be' or 'www.youtube.com' %}
+    {% assign src = src | replace: "watch?v=", "embed/" | replace: "youtu.be", "www.youtube.com/embed"  %}
+  {% when 'v.qq.com' %}
+    {% assign ratio = '60%' %}
+    {% assign src = src | replace: ".html", "" | replace: "x/page/", "txp/iframe/player.html?vid="  %}
+  {% when 'v.youku.com' %}
+    {% assign src = src | replace: ".html", "" | replace: "v.youku.com/v_show/id_", "player.youku.com/embed/"  %}
+{% endcase %}
+
+<div style="
+    position: relative;
+    padding-bottom: {{ ratio }};
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+">
+  <iframe
+    src='{{ src }}'
+    allowfullscreen
+    webkitallowfullscreen
+    frameborder="0"
+    style="
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    "
+  >
+</iframe>
+
+</div>
+```
+
+
+添加完代码后视频是可以引用的，但是关于pdf， 还需要做：
+
+* 首先将[js](https://github.com/startadaywithasmile/startadaywithasmile.github.io/tree/master/ipa%20picture）这个文件夹打包下载， 放入放素材的文件夹内
+
+* 再进入_includes文件夹，打开之前新建的iframe.html，修改相对路径/assets/js/viewer-js/ （我改为/ipa picture/js/viewer-js/)
+
+这里详细举两个例子：
+
+wechaty的；
+
+{% raw %}
+
+```javascript
+pdf 路径：https://github.com/wechaty/wechaty.js.org/blob/master/jekyll/assets/2020/qijibot/final.pdf
+viwer-js 路径：https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/assets/js/viewer-js
+includes代码中 相对路径 ：/assets/js/viewer-js/
+```
+
+{% endraw %}
+
+startadaywithasmile的； 
+
+{% raw %}
+
+```javascript
+#pdf 路径：https://github.com/startadaywithasmile/startadaywithasmile.github.io/blob/master/ipa%20picture/3/3.pdf
+#viwer-js 路径：https://github.com/startadaywithasmile/startadaywithasmile.github.io/tree/master/ipa%20picture/js/viewer-js
+#includes代码中 相对路径 ：/ipa picture/js/viewer-js/
+```
+
+
+#### pdf
+
+在需要嵌入pdf的地方添加以下代码：
+
+
+```javascript
+{% include iframe.html src="/ipa picture/3/3.pdf" %}
+```
+
+
+{% include iframe.html src="/ipa picture/3/3.pdf" %}
+
+
+插入视频时，支持如下网站直接使用视频的播放地址，作为`include`标签的src参数
+
+#### youtube
+
+```javascript
+{% include iframe.html src="https://www.youtube.com/watch?v=3KpFbty0t_8" %}
+```
+
+
+或者短网址
+
+```javascript
+{% include iframe.html src="https://youtu.be/3KpFbty0t_8" %}
+```
+
+{% include iframe.html src="https://www.youtube.com/watch?v=3KpFbty0t_8" %}
+
+#### bilibili
+
+```javascript
+{% include iframe.html src="https://www.bilibili.com/video/BV1Mb411a7Aq" %}
+```
+{% include iframe.html src="https://www.bilibili.com/video/BV1Mb411a7Aq" %}
+
+#### 腾讯视频
+
+```javascript
+{% include iframe.html src="https://v.qq.com/x/page/h003446o88p.html" %}
+```
+
+{% include iframe.html src="https://v.qq.com/x/page/h003446o88p.html" %}
+
+#### 优酷
+
+```javascript
+{% include iframe.html src="https://v.youku.com/v_show/id_XNDgzNjI1MTc0NA==.html" %}
+```
+
+{% include iframe.html src="https://v.youku.com/v_show/id_XNDgzNjI1MTc0NA==.html" %}
+
+## 诗词歌赋 ##
+----
+臨江仙 楊慎
+
+滾滾長江東逝水，浪花淘盡英雄。
+
+是非成敗轉頭空，青山依舊在，幾度夕陽紅。
+
+白髮漁樵江渚上，慣看秋月春風。
+
+一壺濁酒喜相逢。
+
+古今多少事，都付笑談中。
+
+
+下一篇写imac late 2006 ：
+
+* 浏览器 ： Nightly, Chrome
+
+* remote desktop: wins to imac, imac to wins
+
+* 没啥用的俩软件 ： JollysFastVNC, TightVNS
+
+----
+****
+
+![an image alt text](/ipa picture/painting/2021_03_07_22_30_IMG_0055.JPG)
+
+`周末快乐`
