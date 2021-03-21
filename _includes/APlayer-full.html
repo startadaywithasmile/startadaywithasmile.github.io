@@ -20,7 +20,7 @@ for(var i=0;i<getDom.length;i++){//遍历网页中所有播放器
                 listFolded: false,
                 listMaxHeight: 90,
 		lrcType: 3,
-		music: [
+		music: [[
 		    {
 			name: getDom[i].getAttribute("apname1"),
 			artist: getDom[i].getAttribute("apartist1"),
@@ -35,7 +35,7 @@ for(var i=0;i<getDom.length;i++){//遍历网页中所有播放器
 			cover: getDom[i].getAttribute("apcover2"),
 			lrc: getDom[i].getAttribute("aplrc2")			
 		    }
-	        ]
+	        ]]
 	});
 	ap1.init(); 
 }
