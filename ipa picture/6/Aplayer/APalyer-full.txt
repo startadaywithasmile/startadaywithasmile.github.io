@@ -1,0 +1,67 @@
+  <!-- require APlayer -->
+<link rel="stylesheet" href="/ipa picture/css/APlayer.min.css">
+<div id="player1" apname1="{{ page.apname1 }}" apartist1="{{ page.apartist1 }}" apurl1="{{ page.apurl1 }}" apcover1="{{ page.apcover1 }}" aplrc1="{{ page.aplrc1 }}" apname2="{{ page.apname2 }}" apartist2="{{ page.apartist2 }}" apurl2="{{ page.apurl2 }}" apcover2="{{ page.apcover2 }}" aplrc2="{{ page.aplrc2 }}" class="aplayer"></div>
+<script src="/ipa picture/js/APlayer.min.js"></script>
+
+<!-- APlayer 加载参数 -->
+<script type="text/javascript">
+var getDom=document.getElementsByClassName("aplayer");
+for(var i=0;i<getDom.length;i++){//遍历网页中所有播放器
+	var ap1 = new APlayer({
+		element: getDom[i],
+                mini: false,
+                autoplay: false,
+                theme: '#FADFA3',
+                loop: 'all',
+                order: 'random',
+                preload: 'auto',
+                volume: 0.7,
+                mutex: true,
+                listFolded: false,
+                listMaxHeight: 90,
+		lrcType: 3,
+		music: [
+		    {
+			name: getDom[i].getAttribute("apname1"),
+			artist: getDom[i].getAttribute("apartist1"),
+			url: getDom[i].getAttribute("apurl1"),
+			cover: getDom[i].getAttribute("apcover1"),
+			lrc: getDom[i].getAttribute("aplrc1")			
+		    },
+		    {
+			name: getDom[i].getAttribute("apname2"),
+			artist: getDom[i].getAttribute("apartist2"),
+			url: getDom[i].getAttribute("apurl2"),
+			cover: getDom[i].getAttribute("apcover2"),
+			lrc: getDom[i].getAttribute("aplrc2")			
+		    }
+	        ]
+	});
+	ap1.init(); 
+}
+</script>
+
+-------------------------------------------
+
+
+---
+layout: post   				    # 使用的布局（不需要改）
+title:  2021年3月歌单欣赏 				# 标题 
+
+apname1: 偿还
+apartist1: 王菲
+apurl1: /ipa picture/6/偿还.mp3
+apcover1: /ipa picture/6/1.jpg
+aplrc1: /ipa picture/6/偿还.lrc
+
+apname2: 爱与痛的边缘
+apartist2: 王菲
+apurl2: /ipa picture/6/王菲 - 爱与痛的边缘.mp3
+apcover2: /ipa picture/6/王菲 - 爱与痛的边缘.jpg
+aplrc2: /ipa picture/6/王菲 - 爱与痛的边缘.lrc
+
+---
+
+tt
+
+{% include APlayer.html %}
