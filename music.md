@@ -4,4 +4,4 @@ title: Music
 permalink: /music/
 ---
 
-{% include playlist.html %}
+{% include music.html %}
