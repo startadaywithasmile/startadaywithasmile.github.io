@@ -18,4 +18,30 @@ const ap = new APlayer({
 });
 </script>
 
-
+<!-- APlayer-full 加载参数 -->
+<script type="text/javascript">
+const ap = new APlayer({
+    container: document.getElementById('player'),
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    audio: [
+        {
+            name: '暧昧',
+            artist: '王菲',
+            url: '王菲 - 暧昧.mp3',
+            cover: '王菲 - 暧昧.jpg',
+            lrc: '王菲 - 暧昧.lrc',
+            theme: '#ebd0c2'
+        },
+        {
+            name: '偿还',
+            artist: '王菲',
+            url: '王菲 - 偿还.mp3',
+            cover: '王菲 - 偿还.jpg',
+            lrc: '王菲 - 偿还.lrc',
+            theme: '#46718b'
+        }
+    ]
+});
+</script>
