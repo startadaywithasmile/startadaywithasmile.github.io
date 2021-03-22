@@ -4,6 +4,4 @@ title:      /music/ playlist
 
 ---
 
-
-
 {% include playlist.html %}
