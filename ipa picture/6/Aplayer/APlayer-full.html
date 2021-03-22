@@ -1,0 +1,44 @@
+<!-- require APlayer -->
+<link rel="stylesheet" href="/ipa picture/css/APlayer.min.css">
+<div id="player2" apname1="{{ page.apname1 }}" apartist1="{{ page.apartist1 }}" apurl1="{{ page.apurl1 }}" apcover1="{{ page.apcover1 }}" aplrc1="{{ page.aplrc1 }}" apname2="{{ page.apname2 }}" apartist2="{{ page.apartist2 }}" apurl2="{{ page.apurl2 }}" apcover2="{{ page.apcover2 }}" aplrc2="{{ page.aplrc2 }}" class="aplayer2"></div>
+<script src="/ipa picture/js/APlayer.min.js"></script> 
+  
+<!-- APlayer 加载参数 -->
+<script type="text/javascript">
+var getDom2=document.getElementsByClassName("aplayer2");
+for(var i=0;i<getDom2.length;i++){//遍历网页中所有播放器
+	var ap2 = new APlayer({
+		element: getDom2[i],
+                mini: false,
+                autoplay: false,
+                theme: '#FADFA3',
+                loop: 'all',
+                order: 'random',
+                preload: 'auto',
+                volume: 0.7,
+                mutex: true,
+                listFolded: false,
+                listMaxHeight: 90,
+                lrcType: 3,		
+		lrcType: 3,
+		music: [
+	            {
+			name: getDom2[i].getAttribute("apname1"),
+			artist: getDom2[i].getAttribute("apartist1"),
+			url: getDom2[i].getAttribute("apurl1"),
+			cover: getDom2[i].getAttribute("apcover1"),
+			lrc: getDom2[i].getAttribute("aplrc1")
+		    },
+		    {
+			name: getDom2[i].getAttribute("apname2"),
+			artist: getDom2[i].getAttribute("apartist2"),
+			url: getDom2[i].getAttribute("apurl2"),
+			cover: getDom2[i].getAttribute("apcover2"),
+			lrc: getDom2[i].getAttribute("aplrc2")
+		    }			    
+		]		
+	});
+	ap2.init(); 
+}
+</script>
+
