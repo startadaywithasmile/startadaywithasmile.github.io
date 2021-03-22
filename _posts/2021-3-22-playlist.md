@@ -4,4 +4,6 @@ title:      /music/ playlist
 
 ---
 
-{% include 歌单.html %}
+yes
+
+{% include playlist.html %}
