@@ -5,7 +5,7 @@
 	      
 <!-- APlayer 加载参数 -->
 <script type="text/javascript">
-var getDom=document.getElementsByClassName("aplayer1");
+var getDom=document.getElementsByClassName("aplayer");
 for(var i=0;i<getDom1.length;i++){//遍历网页中所有播放器
 	var ap1 = new APlayer({
                 element: getDom[i],
@@ -20,10 +20,11 @@ for(var i=0;i<getDom1.length;i++){//遍历网页中所有播放器
                        cover: getDom[i].getAttribute("apcover"),
                        lrc: getDom[i].getAttribute("aplrc")			
 	        }]
-        });
+	});
 	ap1.init(); 
 }
 </script>
+
 
 
 
