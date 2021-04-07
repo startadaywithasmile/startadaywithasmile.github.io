@@ -21,7 +21,7 @@ and the consequences of that to us
 ## Introduction ##
 ----
 
-Avatar (Screenplay) was written in 1995 which was supposed to be the next film after Titani.
+Avatar was written in 1995 which was supposed to be the next film after Titani.
 
 {% raw %}
 ```liquid
@@ -35,6 +35,7 @@ because of lack of research and development
 `1997 TITANIC`
 
 So after TITANIC he was focus on others films such as ...
+
 {% include image-gallery.html folder="/ipa picture/ep/0_film/3" %}
 `2002 EXPEDITION: BISMARCK`
 
@@ -48,9 +49,11 @@ When his last Exploration Series' movie ended in 2005, they started  Avatar:
 ----
 
 Research the technology
+
 _Weta_ _Camera=virtual camera + reference camera_
 
-Develop the art of the Na'vi's world 
+Develop the art of the Na'vi's world
+
 _Design _Language_ _Music_
 
 #Artistic Creations
