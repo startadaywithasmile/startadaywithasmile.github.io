@@ -50,14 +50,15 @@ When his last Exploration Series' movie ended in 2005, they started  Avatar:
 
 Research the technology
 
-_Weta_ _Camera=virtual camera + reference camera_
+_Weta_, _Camera=virtual camera + reference camera_
 
 Develop the art of the Na'vi's world
 
-_Design _Language_ _Music_
+_Design_, _Language_, _Music_
 
-#Artistic Creations
-#Actor Design#
+#Artistic Creations#
+
+#Actor Design
 
 {% include image-gallery.html folder="/ipa picture/ep/1_Actor" %}
 
@@ -71,11 +72,11 @@ _Design _Language_ _Music_
 ```
 {% endraw %}
 
-#Language#
-
-Paul FROUMMER PhD
+#Language
 
 {% include image-gallery.html folder="/ipa picture/ep/2_Language" %}
+
+`Paul FROUMMER`
 
 {% raw %}
 ```liquid
@@ -85,11 +86,11 @@ when his team were singing
 ```
 {% endraw %}
 
-#Music#
-
-JAMES HURNER
+#Music
 
 {% include image-gallery.html folder="/ipa picture/ep/3_Music" %}
+
+`JAMES HURNER`
 
 {% raw %}
 ```liquid
@@ -105,9 +106,9 @@ so that it sounds like you haven't heard it before
 <source src="https://raw.githubusercontent.com/startadaywithasmile/startadaywithasmile.github.io/master/ipa%20picture/ep/3_Music/music.mp4">
 </video>
 
-#Technology Research
+#Technology Research#
 
-#Camera#
+#Camera
 
 {% include image-gallery.html folder="/ipa picture/ep/4_Camera" %}
 
@@ -128,7 +129,7 @@ the reference cameras are absolutely critical for getting exactly the moment tha
 <source src="https://raw.githubusercontent.com/startadaywithasmile/startadaywithasmile.github.io/master/ipa%20picture/ep/4_Camera/cammera.mp4">
 </video>
 
-#Weta#
+#Weta
 
 {% include image-gallery.html folder="/ipa picture/ep/5_Weta" %}
 
