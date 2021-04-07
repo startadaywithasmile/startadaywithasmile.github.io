@@ -3,6 +3,8 @@ layout: post
 title: /presentation/ How an epoch-making movie is made
 ---
 
+presentation
+
 ## Theme ##
 ----
 
@@ -106,7 +108,9 @@ so that it sounds like you haven't heard it before
 
 {% include image-gallery.html folder="/ipa picture/ep/4_Camera" %}
 
-`the virtual camera` `the reference camera`
+`the virtual camera` 
+
+`the reference camera`
 
 {% raw %}
 ```liquid
@@ -125,7 +129,11 @@ the reference cameras are absolutely critical for getting exactly the moment tha
 
 {% include image-gallery.html folder="/ipa picture/ep/5_Weta" %}
 
-`eye` `facial muscles` `tails, ears` 
+`eye`
+
+`facial muscles` 
+
+`tails, ears` 
 
 {% raw %}
 ```liquid
