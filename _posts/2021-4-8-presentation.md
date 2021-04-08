@@ -1,9 +1,9 @@
 ---
 layout: post
-title: /presentation/ How an epoch-making movie is made
+title: How an epoch-making movie is made
 ---
 
-presentation
+Presentation 
 
 ## Theme ##
 ----
@@ -12,9 +12,7 @@ The relationship between man and nature
 
 {% raw %}
 ```liquid
-The film is about our relationship with nature 
-and how our technological civilization has taken us several removes away from a truly natural existence 
-and the consequences of that to us
+The film is about our relationship with nature and how our technological civilization has taken us several removes away from a truly natural existence and the consequences of that to us
 ```
 {% endraw %}
 
@@ -25,9 +23,7 @@ Avatar was written in 1995 which was supposed to be the next film after Titani.
 
 {% raw %}
 ```liquid
-Avatar (Screenplay) was written in 1995 which was supposed to be the next film after Titanic 
-but they wouldn't be able to get there during that time 
-because of lack of research and development
+Avatar (Screenplay) was written in 1995 which was supposed to be the next film after Titanic but they wouldn't be able to get there during that time because of lack of research and development
 ```
 {% endraw %}
 
@@ -64,11 +60,7 @@ _Design_, _Language_, _Music_
 
 {% raw %}
 ```liquid
-/take a photograph
-/retain the mouth and some of the facial characteristics of the actor
-/turn her into a Na'vi
-/come to a 3D sculpture 
-/scan them into computer used as a model
+/take a photograph/retain the mouth and some of the facial characteristics of the actor/turn her into a Na'vi/come to a 3D sculpture /scan them into computer used as a model
 ```
 {% endraw %}
 
@@ -80,9 +72,7 @@ _Design_, _Language_, _Music_
 
 {% raw %}
 ```liquid
-/the actors master the Na'vi  speak in Na'vi
-/write syllables and consonants for JAMES HURNER so that JAMES could use 
-when his team were singing
+/the actors master the Na'vi  speak in Na'vi /write syllables and consonants for JAMES HURNER so that JAMES could use when his team were singing
 ```
 {% endraw %}
 
@@ -94,9 +84,7 @@ when his team were singing
 
 {% raw %}
 ```liquid
-/collect sounds of different instruments around the world, ethnically based
-/and then he worked with them electronically to make a difference with the real instrument 
-so that it sounds like you haven't heard it before
+/collect sounds of different instruments around the world, ethnically based/and then he worked with them electronically to make a difference with the real instrument so that it sounds like you haven't heard it before
 ```
 {% endraw %}
 
@@ -118,10 +106,7 @@ so that it sounds like you haven't heard it before
 
 {% raw %}
 ```liquid
-the virtual camera shows us what the shot will look like with the CG characters and the world combined
--> the virtual camera is made for the director
-the reference cameras are absolutely critical for getting exactly the moment that we want 
--> the animators (Weta) will check the reference footage to make sure that they're not making mistake during their processing
+the virtual camera shows us what the shot will look like with the CG characters and the world combined-> the virtual camera is made for the director/the reference cameras are absolutely critical for getting exactly the moment that we want -> the animators (Weta) will check the reference footage to make sure that they're not making mistake during their processing
 ```
 {% endraw %}
 
@@ -141,13 +126,7 @@ the reference cameras are absolutely critical for getting exactly the moment tha
 
 {% raw %}
 ```liquid
-eye
--> Weta scanned them with their own software and toke 60 to 70 different poses of their eyes 
-facial muscles
--> study the details using reference cameras to make sure the animation they made  looks the same as the performance
--> it takes months of months for the animator to create the facial muscles for each character
-tails, ears
-->add things like the tail, the ears and imagine how they move after studying cat and dog and other animals' behavior 
+eye-> Weta scanned them with their own software and toke 60 to 70 different poses of their eyes/facial muscles-> study the details using reference cameras to make sure the animation they made  looks the same as the performance-> it takes months of months for the animator to create the facial muscles for each character/tails, ears->add things like the tail, the ears and imagine how they move after studying cat and dog and other animals' behavior 
 ```
 {% endraw %}
 
