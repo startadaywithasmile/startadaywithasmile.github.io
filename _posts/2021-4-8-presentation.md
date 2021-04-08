@@ -72,7 +72,7 @@ _Design_, _Language_, _Music_
 
 {% raw %}
 ```liquid
-/the actors master the Na'vi  speak in Na'vi /write syllables and consonants for JAMES HURNER so that JAMES could use when his team were singing
+/the actors master the Na'vi  speak in Na'vi /write syllables and consonants for James HORNER so that JAMES could use when his team were singing
 ```
 {% endraw %}
 
