@@ -80,7 +80,7 @@ _Design_, _Language_, _Music_
 
 {% include image-gallery.html folder="/ipa picture/ep/3_Music" %}
 
-`JAMES HURNER`
+`James HORNER`
 
 {% raw %}
 ```liquid
