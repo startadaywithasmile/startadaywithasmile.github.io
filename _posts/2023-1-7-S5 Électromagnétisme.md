@@ -76,11 +76,21 @@ const ap = new APlayer({
 
 {% include iframe.html src="/ipa picture/S5 Électromagnétisme/Poly_21-22_1.pdf" %}
 |Poly_21-22_1
+
+&nbsp;
 {% include iframe.html src="/ipa picture/S5 Électromagnétisme/Poly_21-22_2.pdf" %}
 |Poly_21-22_2
+
+&nbsp;
 {% include iframe.html src="/ipa picture/S5 Électromagnétisme/Poly_21-22_3.pdf" %}
 |Poly_21-22_3
+
+&nbsp;
 {% include iframe.html src="/ipa picture/S5 Électromagnétisme/Poly_21-22_4.pdf" %}
 |Poly_21-22_4
+
+&nbsp;
 {% include iframe.html src="/ipa picture/S5 Électromagnétisme/Poly_21-22_5.pdf" %}
 |Poly_21-22_5
+
+&nbsp;
