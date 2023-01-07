@@ -19,13 +19,3 @@ S5  Électromagnétisme
 
 {% include iframe.html src="/ipa picture/S5 Électromagnétisme/Cours-1.pdf" %}
 |Cours-1
-{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Cours-2.pdf" %}
-|Cours-2
-{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Cours-3.pdf" %}
-|Cours-3
-{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Cours-4.pdf" %}
-|Cours-4
-{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Cours-5.pdf" %}
-|Cours-5
-{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Cours-6.pdf" %}
-|Cours-6
