@@ -11,11 +11,16 @@ S5  Électromagnétisme
 
 `Brahms - Waltz No.15`
 
-{% include iframe.html src="/ipa picture/P242/Notes manuscrites des cours/P242_Cours1_15-01-2021.pdf" %}
-|Cours1 15-01-2021
-
-## Transparents Cours en français ##
+## Polycopié cours en français ##
 ----
 
-{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Cours-1.pdf" %}
-|Cours-1
+{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Poly_21-22_1.pdf" %}
+|Poly_21-22_1
+{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Poly_21-22_2.pdf" %}
+|Poly_21-22_2
+{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Poly_21-22_3.pdf" %}
+|Poly_21-22_3
+{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Poly_21-22_4.pdf" %}
+|Poly_21-22_4
+{% include iframe.html src="/ipa picture/S5 Électromagnétisme/Poly_21-22_5.pdf" %}
+|Poly_21-22_5
