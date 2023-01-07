@@ -1,6 +1,6 @@
 ---
 layout: post
-title: /study/ S5  Électromagnétisme
+title: /study/ S5 Électromagnétisme
 ---
 
 S5  Électromagnétisme
