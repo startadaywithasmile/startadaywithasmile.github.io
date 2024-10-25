@@ -72,6 +72,11 @@ const ap = new APlayer({
 ## List document ##
 ----
 
+{% include iframe.html src="/ipa picture/List document/Identification_de_la_réponse_électromagnétique_des_défauts_non_francs_dans_des_signaux_de_réflectométrie.pdf" %}
+|rapport stage
+
+&nbsp;
+
 {% include iframe.html src="/ipa picture/List document/Report_on_Logistic_Regression.pdf" %}
 |rapport projet
 
