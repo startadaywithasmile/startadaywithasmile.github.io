@@ -72,6 +72,10 @@ const ap = new APlayer({
 ## List document ##
 ----
 
+{% include iframe.html src="/ipa picture/List document/Report_on_Logistic_Regression.pdf" %}
+|rapport projet
+
+&nbsp;
 
 {% include iframe.html src="/ipa picture/List document/rapport_projet.pdf" %}
 |rapport projet
