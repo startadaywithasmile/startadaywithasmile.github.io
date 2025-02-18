@@ -3,6 +3,8 @@ layout: post
 title: /study/ M2 Medical Imaging
 ---
 
+M2 Medical Imaging
+
 <!-- require APlayer -->
 <link rel="stylesheet" href="/ipa picture/css/APlayer.min.css">
 <div id="aplayer"></div>
@@ -68,8 +70,6 @@ const ap = new APlayer({
     ]
 });
 </script>
-
-M2 Medical Imaging
 
 `Lab`&nbsp;&nbsp;[MRI acquisition & image reconstruction tutorial](https://mind-inria.github.io/mri-acq-recon-book/intro.html)
 
