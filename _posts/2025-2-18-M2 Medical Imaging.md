@@ -71,7 +71,7 @@ const ap = new APlayer({
 
 M2 Medical Imaging
 
-`Lab`[MRI acquisition & image reconstruction tutorial](https://mind-inria.github.io/mri-acq-recon-book/intro.html)
+`Lab`&nbsp;&nbsp;[MRI acquisition & image reconstruction tutorial](https://mind-inria.github.io/mri-acq-recon-book/intro.html)
 
 ## 1st Lab on MR data acquisition (sampling) ##
 ----
