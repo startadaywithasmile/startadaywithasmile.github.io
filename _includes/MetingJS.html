@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d40a83ae1a264d8a34999865cda783dbdd26503441b8b6d9bd3008537b35b93f
-size 680
+<!-- require APlayer -->
+<link rel="stylesheet" href="/ipa picture/css/APlayer.min.css">
+<script src="/ipa picture/js/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="/ipa picture/js/Meting.min.js"></script>
+
+<!-- MetingJS 加载参数 -->
+<meting-js
+	server="{{ page.meserver }}"
+	type="{{ page.metype }}"
+	id="{{ page.meid }}"
+	autoplay="false"
+	theme="#CC0000"
+	list-max-height="340px"
+	preload="none">
+</meting-js>
+
+<meting-js
+	auto="{{ page.meauto }}">
+</meting-js>
+
+<meting-js
+	name="{{ page.mename }}"
+	artist="{{ page.meartist }}"
+	url="{{ page.meurl }}"
+	cover="{{ page.mecover }}"
+        lrc="{{ page.melrc }}">
+</meting-js>

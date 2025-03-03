@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc84c3afc52b287ebeef01630431d3de71bffc8d7ffd8ae5537bb154d173d7bc
-size 925
+<!-- require APlayer -->
+<link rel="stylesheet" href="/ipa picture/css/APlayer.min.css">
+<div id="player1" apname="{{ page.apname }}" apartist="{{ page.apartist }}" apurl="{{ page.apurl }}" apcover="{{ page.apcover }}" aplrc="{{ page.aplrc }}" class="aplayer1"></div>
+<script src="/ipa picture/js/APlayer.min.js"></script> 
+  
+<!-- APlayer 加载参数 -->
+<script type="text/javascript">
+var getDom1=document.getElementsByClassName("aplayer1");
+for(var i=0;i<getDom1.length;i++){//遍历网页中所有播放器
+	var ap1 = new APlayer({
+		element: getDom1[i],
+		narrow: false,
+		autoplay: false,
+		showlrc: true,
+		lrcType: 3,
+		music: [{
+			name: getDom1[i].getAttribute("apname"),
+			artist: getDom1[i].getAttribute("apartist"),
+			url: getDom1[i].getAttribute("apurl"),
+			cover: getDom1[i].getAttribute("apcover"),
+			lrc: getDom1[i].getAttribute("aplrc")
+		}]
+	});
+	ap1.init(); 
+}
+</script>
+
