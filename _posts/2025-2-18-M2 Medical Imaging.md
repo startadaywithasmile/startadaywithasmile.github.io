@@ -109,5 +109,18 @@ const ap = new APlayer({
 
 -->
 
+## 2nd Lab on MR image reconstruction ##
+----
 
+<a href="https://startadaywithasmile.github.io/ipa%20picture/M2%20Medical%20Imaging/09.Cartesian_CS_image_recon_no_warning_version.html" target="_blank">9. Iterative CS-based MR image reconstruction from Cartesian data</a>
+
+<a href="https://startadaywithasmile.github.io/ipa%20picture/M2%20Medical%20Imaging/10.non-Cartesian_CS_image_recon_no_warning_version.html" target="_blank">10. Non-Cartesian MR image reconstruction</a><br>
+
+<a href="https://startadaywithasmile.github.io/ipa%20picture/M2%20Medical%20Imaging/11.Cartesian_SelfCalibrated_CS-pMRI_recon.html" target="_blank">11. Self-calibrated CS-pMR image reconstruction from undersampled Cartesian data</a><br>
+
+<a href="https://startadaywithasmile.github.io/ipa%20picture/M2%20Medical%20Imaging/12.non-Cartesian_SelfCalibrated_CS-pMRI_recon.html" target="_blank">12. Self-calibrated CS-pMR image reconstruction from undersampled non-Cartesian data</a><br>
+
+<a href="https://startadaywithasmile.github.io/ipa%20picture/M2%20Medical%20Imaging/13.Cartesian_Calibrationless_CS-pMRI_recon.html" target="_blank">13. Calibrationless CS-pMR image reconstruction from undersampled Cartesian data</a><br>
+
+<a href="https://startadaywithasmile.github.io/ipa%20picture/M2%20Medical%20Imaging/4.example_fastMRI_UNet.html" target="_blank">14. Deep learning MRI reconstructoion: Simple UNet model.</a><br>
 
