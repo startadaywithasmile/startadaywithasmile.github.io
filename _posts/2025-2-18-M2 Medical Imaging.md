@@ -122,5 +122,5 @@ const ap = new APlayer({
 
 <a href="https://startadaywithasmile.github.io/ipa%20picture/M2%20Medical%20Imaging/13.Cartesian_Calibrationless_CS-pMRI_recon.html" target="_blank">13. Calibrationless CS-pMR image reconstruction from undersampled Cartesian data</a><br>
 
-<a href="https://startadaywithasmile.github.io/ipa%20picture/M2%20Medical%20Imaging/4.example_fastMRI_UNet.html" target="_blank">14. Deep learning MRI reconstructoion: Simple UNet model.</a><br>
+<a href="https://startadaywithasmile.github.io/ipa%20picture/M2%20Medical%20Imaging/14.example_fastMRI_UNet.html" target="_blank">14. Deep learning MRI reconstructoion: Simple UNet model.</a><br>
 
