@@ -91,4 +91,10 @@ const ap = new APlayer({
 
 &nbsp;
 
+{% include iframe.html src="/ipa picture/List document/Traitement_d_images_hyperspectrales.pdf" %}
+|rapport
+
+&nbsp;
+
+
 
