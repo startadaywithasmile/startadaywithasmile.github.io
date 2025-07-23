@@ -96,5 +96,13 @@ const ap = new APlayer({
 
 &nbsp;
 
+{% include iframe.html src="/ipa picture/List document/FSL_Liver_Cancer.pdf" %}
+|Présentation
 
+&nbsp;
+
+{% include iframe.html src="/ipa picture/List document/UNrolled_Generalized_EM_FSL.pdf" %}
+|Présentation
+
+&nbsp;
 
